@@ -72,6 +72,8 @@
         </div>
     </section>
 
+
+
     <!-- services section start -->
     <section class="services" id="services">
         <div class="max-width">
@@ -151,6 +153,35 @@
         </div>
     </section>
 
+    <!-- git hub calender-->
+
+
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <h2 id="gith" class="section__title" style="text-align:center ; font-size: 40px; font-family: Poppins, sans-serif;">
+        My Github Contribution</h2>
+    <!-- Prepare a container for your calendar. -->
+    <div class="calendar" style="width: 100%">
+        <!-- Loading stuff -->
+
+    </div>
+
+    <script>
+        GitHubCalendar(".calendar", "namdevmanoharpatil");
+
+        // or enable responsive functionality:
+        GitHubCalendar(".calendar", "namdevmanoharpatil", { responsive: true });
+
+        // Use a proxy
+        GitHubCalendar(".calendar", "namdevmanoharpatil", {
+            proxy(namdevmanoharpatil) {
+                return fetch(`https://your-proxy.com/github?user=${namdevmanoharpatil}`)
+            }
+        }).then(r => r.text())
+    </script>
+
     <!-- project section start -->
     <section class="project" id="project">
         <div class="max-width">
@@ -224,7 +255,7 @@
 
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- contact section start -->
 
