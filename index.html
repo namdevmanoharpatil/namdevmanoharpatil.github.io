@@ -31,6 +31,8 @@
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#project" class="menu-btn">Projects</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/158KBtbi33lyDf9S9tawR-623jbURdRnm/view?usp=sharing"
+                        class="menu-btn">Resume</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -152,19 +154,35 @@
             </div>
         </div>
     </section>
-    <!-- git hub stats-->
 
-    <div class="container" id="stat" style="margin-bottom: 4%;">
+
+    <!-- git hub calender-->
+    <h2 id="gith" class="section__title" style="text-align:center ; font-size: 40px; font-family: Poppins, sans-serif;">
+        My Github Contribution</h2>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+    <!-- Prepare a container for your calendar. -->
+    <div class="calendar" style="width: 100%">
+        <!-- Loading stuff -->
+
+    </div>
+
+    <!-- git hub stats-->
+    <div class="container" id="stat"
+        style="margin-bottom: 200px ;margin-left: 5px; margin-right: 5px; height: 60px; width: 100%;">
         <!-- <h1 class="sub-titl">My Stats</h1> -->
         <h1><br></h1>
 
         <div class="stats" style="width: 100%;">
             <img src="https://github-readme-stats.vercel.app/api?username=namdevmanoharpatil&theme=dark&hide_border=false&include_all_commits=true&count_private=false"
-                alt="">
+                alt="" style="width:33%;">
             <img src="https://github-readme-streak-stats.herokuapp.com/?user=namdevmanoharpatil&theme=dark&hide_border=false"
-                alt="">
+                alt="" style="width:33%;">
             <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=namdevmanoharpatil&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact"
-                alt="">
+                alt="" style="width:33%;">
         </div>
 
         <div class="calendar" style=" color: #f49812">
@@ -173,6 +191,10 @@
         </div>
 
     </div>
+
+
+
+
 
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 
@@ -183,33 +205,14 @@
 
 
     <script>
-        GitHubCalendar(".calendar", "ujjawalyt");
+        GitHubCalendar(".calendar", "namdevmanoharpatil");
 
-        GitHubCalendar(".calendar", "ujjawalyt", { responsive: true });
+        GitHubCalendar(".calendar", "namdevmanoharpatil", { responsive: true });
     </script>
 
 
 
 
-
-
-
-    <!--git hub stats---Ends->
-
-    <!-- git hub calender-->
-
-
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-    </script>
-    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-    <h2 id="gith" class="section__title" style="text-align:center ; font-size: 40px; font-family: Poppins, sans-serif;">
-        My Github Contribution</h2>
-    <!-- Prepare a container for your calendar. -->
-    <div class="calendar" style="width: 100%">
-        <!-- Loading stuff -->
-
-    </div>
 
     <script>
         GitHubCalendar(".calendar", "namdevmanoharpatil");
@@ -234,8 +237,8 @@
                     <div class="box">
                         <img src="https://images.livemint.com/img/2021/10/29/1600x900/Meesho_1635504687538_1635504694810.JPG"
                             alt="">
-                        <div class="text">Meeshow</div>
-                        <p>Inspired by Meeshow.com, I tried to create a Clone of it with the all the functionalities of
+                        <div class="text">Meesho</div>
+                        <p>Inspired by Meesho.com, I tried to create a Clone of it with the all the functionalities of
                             the
                             original One..</p>
                         <p class="techStack">Tech Used: Html, CSS, JavaScript</p>

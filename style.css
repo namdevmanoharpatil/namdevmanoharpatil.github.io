@@ -502,6 +502,7 @@ section .title::after {
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
+  height: 620px;
 }
 
 .project .carousel .card:hover {
@@ -939,14 +940,14 @@ footer span a:hover {
     font-family: Helvetica, arial;
     border: 1px solid #DDDDDD;
     border-radius: 3px;
-    min-height: 500px;
+    min-height: 20px;
     text-align: center;
 
   }
 
   .calendar-graph text.wday,
   .calendar-graph text.month {
-    font-size: 10px;
+    font-size: 15px;
     fill: #aaa;
   }
 
@@ -1115,21 +1116,21 @@ footer span a:hover {
 
   } */
 
-  .stats {
+  .container>.stats {
     height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
-    gap: 20px;
+    width: 100%;
+    gap: 50px;
     margin-bottom: 2%;
   }
 
-  .stats img {
-    width: 32%;
+  .container>.stats img {
+    width: 33%;
   }
 
-  .sub-titl {
+  .sub-title {
     text-align: center;
     margin-bottom: 4%;
     font-size: 50px;
