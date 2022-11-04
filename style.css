@@ -932,6 +932,8 @@ footer span a:hover {
     fill: var(--color-calendar-graph-day-L4-bg);
   }
 
+  /* //calendar--Stuffs */
+
   .calendar .width-full>.float-left {
     display: none;
   }
@@ -1105,7 +1107,6 @@ footer span a:hover {
     font-size: 11px;
   }
 
-  /* git hub calender
 
   .section__title {
     text-align: center;
@@ -1114,7 +1115,10 @@ footer span a:hover {
     margin-bottom: 30px;
     font-size: 30px;
 
-  } */
+  }
+
+  /* git hub calender  */
+
 
   .container>.stats {
     height: fit-content;
