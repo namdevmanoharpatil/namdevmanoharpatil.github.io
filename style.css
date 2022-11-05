@@ -57,6 +57,7 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
 }
 
 section .title {
@@ -155,8 +156,8 @@ section .title::after {
 
 /* menu btn styling */
 .menu-btn {
-  color: #fff;
-  font-size: 23px;
+  color: rgb(20, 18, 18);
+  font-size: 25px;
   cursor: pointer;
   display: none;
 }
@@ -319,6 +320,16 @@ section .title::after {
 }
 
 /* services section styling */
+
+.section__title {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 30px;
+
+}
+
 .services,
 .project {
   color: #fff;
@@ -392,6 +403,8 @@ section .title::after {
 }
 
 .skills-images img:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 110%;
   transition: all 0.6s ease;
   transform: scale(0.9);
 }
@@ -904,6 +917,380 @@ footer span a:hover {
 
 
 
+/* _______________________________________________________________________________________________ */
+
+
+/* #github-stats {
+    padding: 100px 10px;
+} */
+
+.github-stats-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin-top: 50px;
+  grid-gap: 40px;
+}
+
+
+.github-stat {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.github-stat img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  padding: 10px 30px;
+}
+
+
+.github-st .title::after {
+  content: "see my work";
+}
+
+.github-stat:hover img {
+  transform: scale(1.1);
+}
+
+.mb-0 {
+  text-align: center;
+  margin-bottom: -2%;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+/*  Stat*/
+
+.heading {
+  text-align: center;
+}
+
+.skills-content-stat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.skills-box {
+  padding: 20px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: #111;
+  color: #fff;
+  border-bottom: 2px solid var(--main-color);
+}
+
+.skills-box:hover {
+  /* background-color: #02225a; */
+  background-color: rgb(2, 166, 70);
+}
+
+.skills-box {
+  cursor: pointer;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+  transform: translateX(400%);
+  transition: transform 1000ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.skills-box:nth-child(even) {
+  transform: translateX(-400%);
+}
+
+
+.skills-box.show {
+  transform: translateX(0);
+}
+
+
+/* responsive media query start */
+
+
+@media (max-width: 1104px) {
+
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+  }
+
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar .menu.active {
+    left: 0;
+  }
+
+  .navbar .menu li {
+    display: block;
+  }
+
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  .max-width {
+    max-width: 930px;
+  }
+
+  .about .about-content .column {
+    width: 100%;
+  }
+
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+
+  .about .about-content .right {
+    flex: 100%;
+  }
+
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+
+  .skills .skills-content .column,
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 32px;
+  }
+
+  .home .home-content a {
+    font-size: 20px;
+  }
+
+  .services .serv-content .card {
+    width: 100%;
+  }
+
+  .github-stat {
+    width: 300px;
+    font-size: 8px;
+  }
+
+  .github-stat {
+    width: 100%;
+    font-size: 8px;
+  }
+
+  .container {
+    text-align: center;
+
+  }
+
+  .cont-box-1>img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .github-stat>img {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .pro-info>div>img {
+    width: 50px;
+    height: 50px;
+
+  }
+
+  .skils-content-1>div {
+    margin-top: 20px;
+  }
+
+  .skils-content-1>div>img {
+    margin: 5px;
+  }
+
+  .github-stats-list {
+    /* display: grid;
+grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+margin-top: 50px;
+grid-gap: 40px; */
+
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    margin-top: 50px;
+    grid-gap: 40px;
+  }
+
+  /* .contact{
+margin-top: -30%;
+} */
+
+  .skills-content-stat {}
+
+}
+
+
+
+@media (max-width: 500px) {
+  .home .home-content .text-2 {
+    font-size: 50px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 27px;
+  }
+
+  .about .about-content .right .text,
+  .skills .skills-content .left .text {
+    font-size: 19px;
+  }
+
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+
+  .right form .error-box {
+    width: 150px;
+  }
+
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+
+  .project-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .github-stat {
+    width: 100%;
+    font-size: 8px;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .cont-box-1>img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .github-stat>img {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .pro-info>div>img {
+    width: 50px;
+    height: 50px;
+
+  }
+
+  .skils-content-1>div {
+    margin-top: 20px;
+  }
+
+  .skils-content-1>div>img {
+    margin: 5px;
+  }
+
+  .github-stats-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    margin-top: 50px;
+    grid-gap: 40px;
+  }
+
+  .my-cont {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .my-cont>.cont-box-1 {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 1.5%;
+    background-color: #000;
+
+  }
+
+  .contact {
+    margin-top: -30%;
+  }
+}
+
+
+/* __________________________________________________________________ */
+
+
+
+
 
 
 :root {
@@ -934,32 +1321,36 @@ rect.ContributionCalendar-day[data-level='4'] {
   fill: var(--color-calendar-graph-day-L4-bg);
 }
 
-/* //calendar--Stuffs */
-
 .calendar .width-full>.float-left {
   display: none;
 }
 
 .calendar {
-  font-family: Helvetica, arial;
+  width: 80%;
   border: 1px solid #DDDDDD;
-  border-radius: 3px;
-  min-height: 20px;
+  border-radius: 10px;
   text-align: center;
+  margin: auto;
+  padding: 1%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
+.git {
+  background-color: #101010;
 }
 
 .calendar-graph text.wday,
 .calendar-graph text.month {
-  font-size: 15px;
-  fill: #aaa;
+  font-size: 10px;
+  fill: rgb(128, 123, 123);
 }
 
 .contrib-legend {
   text-align: right;
   padding: 0 14px 10px 0;
   display: inline-block;
-
+  float: right;
 }
 
 .contrib-legend .legend {
@@ -979,7 +1370,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 
 .text-small {
   font-size: 12px;
-  color: #767676;
+  color: #181717;
 }
 
 .calendar-graph {
@@ -992,7 +1383,7 @@ rect.ContributionCalendar-day[data-level='4'] {
   text-align: center;
   border-left: 1px solid #ddd;
   border-top: 1px solid #ddd;
-  font-size: 15px;
+  font-size: 11px;
 }
 
 .contrib-column-first {
@@ -1012,11 +1403,11 @@ rect.ContributionCalendar-day[data-level='4'] {
   line-height: 1.3em;
   font-size: 24px;
   display: block;
-  color: #333;
+  color: #b5adad;
 }
 
 .calendar img.spinner {
-  width: 100px;
+  width: 70px;
   margin-top: 50px;
   min-height: 70px;
 }
@@ -1044,7 +1435,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 .left.text-muted {
   float: left;
   margin-left: 9px;
-  color: #767676;
+  color: #2d2c2c;
 }
 
 .left.text-muted a {
@@ -1107,40 +1498,4 @@ h2.f4.text-normal.mb-3 {
 text.ContributionCalendar-label {
   fill: #ccc;
   font-size: 11px;
-}
-
-
-.section__title {
-  text-align: center;
-  font-family: "Ubuntu", sans-serif;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  font-size: 30px;
-
-}
-
-/* git hub Stats */
-
-
-.container>.stats {
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 50px;
-  margin-bottom: 2%;
-}
-
-.container>.stats img {
-  width: 33%;
-}
-
-.sub-title {
-  text-align: center;
-  margin-bottom: 4%;
-  font-size: 15px;
-  font-weight: 400;
-  margin-top: 4%;
-  color: black;
 }
