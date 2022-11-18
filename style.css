@@ -450,7 +450,7 @@ nav .fas {
     display: none;
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:600px) {
     #about {
         padding: 80px 0;
         color: #ababab;
@@ -582,7 +582,7 @@ nav .fas {
 
     .about-col-1 {
         flex-basis: 100%;
-        margin-top: -350px;
+        margin-top: -250px;
 
     }
 
