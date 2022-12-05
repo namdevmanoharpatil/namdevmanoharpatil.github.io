@@ -372,6 +372,10 @@ nav ul li a:hover::after {
 
 /* ======================calender======================== */
 
+.profile-title {
+
+    margin: auto;
+}
 
 /* ===================================Contact===================== */
 #contact {
@@ -831,6 +835,13 @@ nav .fas {
         border-radius: 10px;
         position: relative;
         overflow: hidden;
+
+    }
+
+    .profile-title {
+        width: 80%;
+        margin: auto;
+
 
     }
 }
