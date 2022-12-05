@@ -291,6 +291,7 @@ nav ul li a:hover::after {
     height: 100%;
     width: 100%;
     border: 1px solid white;
+    color: #f8f8f8;
 }
 
 .work img {
@@ -317,16 +318,17 @@ nav ul li a:hover::after {
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     /* transition: height 0.5s; */
     /* border: 3px solid white; */
     border-radius: 7px;
+    /* color: #e8d717; */
 
 }
 
 .layer h3 {
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .layer a {
@@ -340,7 +342,6 @@ nav ul li a:hover::after {
     height: 60px;
     border-radius: 50%;
     /* text-align: center; */
-
 }
 
 /* .work:hover img {
@@ -493,9 +494,7 @@ nav .fas {
         text-shadow: 2px 2px black;
         /* outline: 2px solid white; */
         /* background-image: url(https://wallpaperaccess.com/full/2109964.jpg); */
-
         background-image: url("https://embetronicx.com/wp-content/uploads/2017/08/background.jpg");
-
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center right;
@@ -538,7 +537,6 @@ nav .fas {
         padding: 50px 0;
         width: 90%;
         /* border: 1px solid blue; */
-
     }
 
     .work-list {
@@ -647,6 +645,7 @@ nav .fas {
 
 
 @media only screen and (min-width:321px) and (max-width:820px) {
+
     #about {
         padding: 80px 0;
         color: #ababab;
